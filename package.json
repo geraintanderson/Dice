@@ -1,0 +1,26 @@
+{
+  "name": "dice.js",
+  "version": "1.0.0",
+  "description": "A simple dice web app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/geraintanderson/Dice.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Geraint Anderson <geraint@geraintanderson.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geraintanderson/Dice/issues"
+  },
+  "homepage": "https://github.com/geraintanderson/Dice#readme",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}
