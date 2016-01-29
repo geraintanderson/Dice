@@ -1,9 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang-"en">
 <head>
-  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Dice.js</title>
 </head>
-<body>
-  <h1><%= title %></h1>
+<body ng-app>
+  <div id="container">
+    <h1>
+      Dice.js
+      <small>A simple dice application using the MEAN stack (or node and angular for now...).</small>
+    </h1>
+    <p>Hello {{userName}}, and welcome to the online dice!.</p>
+    <div class="form-group">
+      <label for="userName">User Name</label>
+      <input type="text" name="userName" id="userName" class="form-control" ng-model="userName" placeholder="Enter your name">
+      <button type="button" class="btn btn-default">Roll</button>
+    </div>
+    <p>You rolled a <%= roll %></p>
+    <h2>Steps</h2>
+    <ol>
+      <li>Pass in the required number of sides</li>
+      <li>Pass in the required number of dice</li>
+      <script src="jquery/dist/jquery.min.js"></script>
+      <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="angular/angular.min.js"></script>
+    </ol>
+  </div>
 </body>
 </html>
